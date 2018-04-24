@@ -13,13 +13,13 @@ codegen.py > Generates 3 address code from the ir code.
 
 Steps to execute
 ---------------------------------------------------------------------------------------------------
-- cd asgn4
+- cd Final
 – make
 – compile test1.cs
 
 Output
 ---------------------------------------------------------------------------------------------------
-Executing the above commands generates IR code of the corresponding C# script on stdout
+Executing the above commands generates the compiled output of the corresponding C# script on stdout
 
 Implementation Details
 ---------------------------------------------------------------------------------------------------
