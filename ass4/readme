@@ -1,0 +1,46 @@
+Assignment 4: Group 31
+Group members:
+    Kamlesh Meena (14299)
+    Ankit Gupta (14103)
+    Nikhil Ghantudia (14246)
+
+
+Scripts
+---------------------------------------------------------------------------------------------------
+parser.py > Parser for language to be compiled. It uses PLY and hence yacc implementation.
+lexer.py > Lexer for language to be compiled. It uses PLY and hence lex implementation.
+
+Steps to execute
+---------------------------------------------------------------------------------------------------
+- cd asgn4
+– make
+– bin/irgen test/test1.c
+
+Output
+---------------------------------------------------------------------------------------------------
+Executing the above commands generates IR code of the corresponding C# script on stdout
+
+Implementation Details
+---------------------------------------------------------------------------------------------------
+Implemented Features:
+1. Data types : int,char,double,float
+2. 1-D Array
+3. Operations : !,-,~,+, <, >, ==, !=, +,-,/,%, <<,>>,&,|,^, &&,||, =, !, &&,||, =, ++, --
+4. Loops : for , while 
+5. If-Else
+6. Functional features
+7. Scoping
+8. Single class declaration
+
+Features Not supported
+1. Advanced OOP like classes and objects
+2. structs , switch case, foreach, do-while
+3. multi-dimensional arrays
+
+Test Scripts
+---------------------------------------------------------------------------------------------------
+1. test1.cs : functional features 
+2. test2.cs : loops
+3. test3.cs : arrays
+4. test4.cs : recursion
+5. test5.cs : scoping

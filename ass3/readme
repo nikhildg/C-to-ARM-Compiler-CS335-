@@ -1,0 +1,42 @@
+Assignment 3: Group 31
+Group members:
+    Kamlesh Meena (14299)
+    Ankit Gupta (14103)
+    Nikhil Ghantudia (14246)
+
+
+Scripts
+---------------------------------------------------------------------------------------------------
+parser.py > Parser for language to be compiled. It uses PLY and hence yacc implementation.
+lexer.py > Lexer for language to be compiled. It uses PLY and hence lex implementation.
+parser > Shell script to parse given test file and generate html output via html.cpp.
+html.cpp > Code for generating html output. Invoked by parser shell script.
+
+Steps to execute
+---------------------------------------------------------------------------------------------------
+$ cd asgn3/
+$ make
+$ bin/parser test/test1.cs
+
+
+Output files
+---------------------------------------------------------------------------------------------------
+right_derivation.html :  This .html file contains the LR parsing tree of the input program
+The non-terminal being expanded are marked in a different color/bold-faced/underlined etc.
+
+
+Implementation Details
+---------------------------------------------------------------------------------------------------
+Here we have tried to implement most of the features listed below:
+
+Variable declarations:Int,Float,Char,String
+New operator
+Object_declaration
+ForStatement
+If-Else Statement
+Array declaration
+Boolean implementation
+Access modifiers
+Operators : +,-,*,/ ..etc
+Assign and Compare operators
+

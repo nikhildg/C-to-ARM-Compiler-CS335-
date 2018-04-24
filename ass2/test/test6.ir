@@ -1,0 +1,12 @@
+1, =, b, 1234345344
+2, =, a, 1234
+3, =, t, 0
+4, call, foo
+5, exit
+6, function, foo
+7, print, b
+8, ifgoto, <=, b, 0, 12
+9, %, t, b, 10
+10, /, b, b, 10
+11, call, foo
+12, return

@@ -1,0 +1,29 @@
+1, =, res, 0
+2, =, i, 0
+3, goto, 24
+4, label, D.2051
+5, =, j, 0
+6, goto, 19
+7, label, D.2048
+8, =, k, 0
+9, goto, 14
+10, label, D.2045
+11, +, res, res, 1
+12, +, k, k, 1
+13, label, D.2046
+14, ifgoto, <=, k, 9, 11
+15, ifgoto, >, k, 9, 17
+16, label, D.2047
+17, +, j, j, 1
+18, label, D.2049
+19, ifgoto, <=, j, 9, 8
+20, ifgoto, <=, j, 9, 22
+21, label, D.2050
+22, +, i, i, 1
+23, label, D.2052
+24, ifgoto, <=, i, 9, 5
+25, ifgoto, >, i, 9, 27
+26, label, D.2053
+27, print, "res="
+28, print, res
+29, exit

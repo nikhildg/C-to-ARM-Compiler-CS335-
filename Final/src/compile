@@ -1,0 +1,9 @@
+#!/bin/bash
+
+bin/parser $1 > test.ir
+if grep -i "error" test.ir;then
+    exit 1
+fi 
+bin/codegen test.ir > test.s
+arm-linux-gnueabihf-gcc -o a.out test.s
+qemu-arm-static -L /usr/arm-linux-gnueabihf a.out

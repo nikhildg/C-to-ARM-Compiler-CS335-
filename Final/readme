@@ -1,0 +1,51 @@
+Final Submission: Group 31
+Group members:
+    Kamlesh Meena (14299)
+    Ankit Gupta (14103)
+    Nikhil Ghantudia (14246)
+
+
+Scripts
+---------------------------------------------------------------------------------------------------
+parser.py > Parser for language to be compiled. It uses PLY and hence yacc implementation.
+lexer.py > Lexer for language to be compiled. It uses PLY and hence lex implementation.
+codegen.py > Generates 3 address code from the ir code.
+
+Steps to execute
+---------------------------------------------------------------------------------------------------
+- cd asgn4
+– make
+– compile test1.cs
+
+Output
+---------------------------------------------------------------------------------------------------
+Executing the above commands generates IR code of the corresponding C# script on stdout
+
+Implementation Details
+---------------------------------------------------------------------------------------------------
+Implemented Features:
+1. Data types : int,char,double
+2. Operations : !,~, <, >, ==, !=, +, -, /, %, <<, >>, &, |, ^, &&, ||, =, ++, --
+3. Loops : for , while (nested supported)
+4. If-Else(Nested if-else statements supported)
+5. Functional features(parameter passing, return integers only)
+6. Scoping
+7. Single class declaration
+8. Spilling supported
+9. Arrays(Partial:supported only for Ir code generation)
+
+Features Not supported
+1. Advanced OOP like classes and objects
+2. structs , switch case, foreach, do-while
+
+
+Test Scripts
+---------------------------------------------------------------------------------------------------
+1. array.cs
+2. boolops.cs
+3. evenodd.cs
+4. mathop.cs
+5. nestedfor.cs
+7. scoping.cs
+8. simplefunc.cs
+9. spilling.cs
